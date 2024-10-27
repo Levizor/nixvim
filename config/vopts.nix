@@ -21,6 +21,10 @@
         action = "<cmd>Telescope find_files<CR>";
         key = "<leader>f";
       }
+      {
+      	action = "<cmd>Oil<CR>";
+	key = "<leader>e";
+      }
     ];
 
     highlight = {
