@@ -33,7 +33,7 @@
   plugins.cmp = {
     enable = true;
     autoEnableSources = true;
-    settings= {
+    settings = {
       sources = [
         {name = "nvim_lsp";}
         {name = "path";}
@@ -48,7 +48,7 @@
         "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
         "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
         "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-        "<Up>" =  "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+        "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
       };
     };
   };

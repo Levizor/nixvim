@@ -4,11 +4,9 @@
     relativenumber = true;
 
     shiftwidth = 2;
-
   };
 
   config = {
-
     globals.mapleader = " ";
 
     keymaps = [
@@ -26,5 +24,4 @@
       Comment.underline = true;
     };
   };
-
 }
