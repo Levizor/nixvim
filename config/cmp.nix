@@ -85,8 +85,8 @@
 
 	window = {
           completion = {
-            # winhighlight =
-            #   "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            winhighlight =
+              "FloatBorder:CmpBorder,Normal:CmpPmenu,Search:PmenuSel";
             scrollbar = false;
             sidePadding = 0;
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
@@ -94,8 +94,8 @@
 
           settings.documentation = {
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
-            # winhighlight =
-            #   "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            winhighlight =
+              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
           };
         };
       };
