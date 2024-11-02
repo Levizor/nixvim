@@ -5,6 +5,7 @@
     ./vopts.nix
     ./lsp.nix
     ./cmp.nix
+    ./mappings.nix
   ];
 
   colorschemes.nord.enable = true;
