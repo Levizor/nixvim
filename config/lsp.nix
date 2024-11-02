@@ -32,9 +32,6 @@
 
   plugins.none-ls = {
     enable = true;
-    formatting = {
-      markdownlint.enable = true;
-      nixfmt.enable = true;
-    };
   };
+
 }
