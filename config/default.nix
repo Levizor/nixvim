@@ -3,6 +3,7 @@
   imports = [
     ./bufferline.nix
     ./vopts.nix
+    ./lsp.nix
   ];
 
   colorschemes.nord.enable = true;
@@ -17,38 +18,10 @@
     treesitter.enable = true;
 
     luasnip.enable = true;
+
+    lazy.enable = true;
   };
 
-  plugins.lsp = {
-    enable = true;
-    servers = {
-      lua_ls.enable = true;
-      rust_analyzer = {
-	enable = true;
-	installRustc = false;
-	installCargo = false;
-      };
-      clangd.enable = true;
-      cmake.enable = true;
-      nixd.enable = true;
-    };
-
-    keymaps = {
-      diagnostic = {
-	"<leader>j" = "goto_next";
-	"<leader>k" = "goto_prev";
-      };
-      lspBuf = {
-	  K = "hover";
-	  gD = "references";
-	  gd = "definition";
-	  gi = "implementation";
-	  gt = "type_definition";
-	};
-    };
-  };
-
-  plugins.lazy.enable = true;
 
   plugins.lsp-format = {
     enable = true;
