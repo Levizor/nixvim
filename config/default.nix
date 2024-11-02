@@ -18,8 +18,6 @@
 
     oil.enable = true;
 
-    treesitter.enable = true;
-
     luasnip.enable = true;
 
     lazy.enable = true;
