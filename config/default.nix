@@ -6,6 +6,7 @@
     ./lsp.nix
     ./cmp.nix
     ./mappings.nix
+    ./utils
   ];
 
   colorschemes.nord.enable = true;
