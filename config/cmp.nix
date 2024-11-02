@@ -95,7 +95,7 @@
           settings.documentation = {
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
             winhighlight =
-              "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+              "FloatBorder:CmpBorder,Normal:CmpPmenu,Search:PmenuSel";
           };
         };
       };
