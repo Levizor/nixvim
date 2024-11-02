@@ -2,7 +2,7 @@
   # Import all your configuration modules here
   imports = [
     ./bufferline.nix
-    ./vopts.nix
+    ./options.nix
     ./lsp.nix
     ./cmp.nix
     ./mappings.nix
