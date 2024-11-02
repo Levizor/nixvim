@@ -4,7 +4,7 @@
     web-devicons.enable = true;
   };
 
-  config.keymaps = [
+  keymaps = [
     {
       action = "<cmd>BufferLineCycleNext<CR>";
       key = "L";
