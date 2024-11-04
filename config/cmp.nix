@@ -31,7 +31,7 @@
             "kind"
             "menu"
           ];
-          format =''
+          /*format =''
             function(_, item)
               local icons = {
                 Namespace = "󰌗",
@@ -80,7 +80,7 @@
               item.kind = string.format("%s %s", icon, item.kind or "")
               return item
             end
-          '';
+          '';*/
         }; 
 
         window = {
