@@ -40,6 +40,12 @@
         };
         mode = ["n" "v"];
       }
+      {
+        action = "<cmd>bd<CR>";
+        key = "<leader>c";
+        options.desc = "Close buffer";
+        mode = ["n" "v"];
+      }
     ];
 
     highlight = {
