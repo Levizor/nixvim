@@ -42,7 +42,7 @@
       }
       {
         action = "<cmd>bd<CR>";
-        key = "<leader>c";
+        key = "<leader>x";
         options.desc = "Close buffer";
         mode = ["n" "v"];
       }
