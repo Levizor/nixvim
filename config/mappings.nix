@@ -46,6 +46,13 @@
         options.desc = "Close buffer";
         mode = ["n" "v"];
       }
+      {
+        action = "<cmd>TransparentToggle<CR>";
+        key = "<leader>tt";
+        options = {
+          desc = "Toggle transparency";
+        }; 
+      }
     ];
 
     highlight = {
