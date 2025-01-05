@@ -41,6 +41,22 @@
         mode = ["n" "v"];
       }
       {
+        action = "<cmd>BufferLineMoveNext<CR>";
+        key = "<Ctrl-L>";
+        options = {
+          desc = "Move tab to right";
+        };
+        mode = ["n" "v"];
+      }
+      {
+        action = "<cmd>BufferLineMovePrev<CR>";
+        key = "<Ctrl-H>";
+        options = {
+          desc = "Move tab to left";
+        };
+        mode = ["n" "v"];
+      }
+      {
         action = "<cmd>bd<CR>";
         key = "<leader>x";
         options.desc = "Close buffer";
