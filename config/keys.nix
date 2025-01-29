@@ -1,15 +1,14 @@
 {
   globals.mapleader = " ";
 
-
   highlight = {
     Comment.underline = true;
   };
   plugins.which-key = {
     enable = true;
-    settings ={
+    settings = {
       delay = 200;
-      expand = 1; 
+      expand = 1;
       notify = false;
       preset = false;
 
@@ -85,8 +84,18 @@
         }
         {
           __unkeyed-1 = "<leader>cr";
-          icon = "󰑕 ";
+          icon = "󰲽 ";
           desc = "Rename";
+        }
+        {
+          __unkeyed-1 = "<leader>j";
+          icon = "󰲽 ";
+          desc = "Next Diagnostic";
+        }
+        {
+          __unkeyed-1 = "<leader>k";
+          icon = "󰑕 ";
+          desc = "Previous Diagnostic";
         }
         {
           __unkeyed-1 = "<leader>f";
@@ -175,7 +184,7 @@
       key = "<leader>tt";
       options = {
         desc = "Toggle transparency";
-      }; 
+      };
     }
     {
       mode = "n";
