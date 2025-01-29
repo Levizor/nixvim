@@ -9,6 +9,7 @@
         installRustc = false;
         installCargo = false;
       };
+      nil_ls.enable = true;
       clangd.enable = true;
       cmake.enable = true;
       nixd.enable = true;
