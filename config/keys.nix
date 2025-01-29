@@ -192,6 +192,13 @@
       };
     }
     {
+      action = "<cmd>UndotreeToggle<CR>";
+      key = "<leader>ut";
+      options = {
+        desc = "Toggle undotree";
+      };
+    }
+    {
       mode = "n";
       key = "gd";
       action = "<CMD>FzfLua lsp_definitions jump_to_single_result=true ignore_current_line=true<CR>";

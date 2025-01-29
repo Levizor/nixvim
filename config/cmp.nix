@@ -14,6 +14,7 @@
           {name = "luasnip";}
           {name = "supermaven";}
         ];
+
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";
