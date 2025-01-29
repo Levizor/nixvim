@@ -1,4 +1,3 @@
-
 {
   plugins = {
     lsp = {
@@ -25,18 +24,16 @@
           "<leader>do" = "setloclist";
         };
         lspBuf = {
-            K = "hover";
-            gr = "references";
-            gD = "declaration";
-            gd = "definition";
-            gi = "implementation";
-            gt = "type_definition";
-            ca = "code_action";
-            cr = "rename";
-          
-
-          };
+          K = "hover";
+          gr = "references";
+          gD = "declaration";
+          gd = "definition";
+          gi = "implementation";
+          gt = "type_definition";
+          ca = "code_action";
+          cr = "rename";
         };
+      };
     };
 
     none-ls = {
@@ -50,20 +47,17 @@
       };
     };
 
-
-
     treesitter = {
-        enable = true;
-        nixGrammars = true;
-        settings = {
-          highlight.enable = true;
-          indent.enable = true;
-        };
+      enable = true;
+      nixGrammars = true;
+      settings = {
+        highlight.enable = true;
+        indent.enable = true;
+      };
     };
     treesitter-context = {
       enable = true;
     };
-
 
     conform-nvim = {
       enable = true;
@@ -89,6 +83,5 @@
     trouble = {
       enable = true;
     };
-
   };
 }

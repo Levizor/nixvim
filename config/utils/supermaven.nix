@@ -3,7 +3,7 @@
     vimPlugins.supermaven-nvim
   ];
 
-  extraConfig = ''
+  extraConfigLua = ''
     require("supermaven-nvim").setup({
       keymaps = {
         accept_suggestion = "<Tab>",
@@ -22,5 +22,6 @@
         return false
       end -- condition to check for stopping supermaven, `true` means to stop supermaven when the condition is true.
     })
+
   '';
 }

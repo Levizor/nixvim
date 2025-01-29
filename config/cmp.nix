@@ -12,6 +12,7 @@
           {name = "buffer";}
           {name = "emoji";}
           {name = "luasnip";}
+          {name = "supermaven";}
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
@@ -31,7 +32,8 @@
             "kind"
             "menu"
           ];
-          /*format =''
+          /*
+            format =''
             function(_, item)
               local icons = {
                 Namespace = "󰌗",
@@ -80,31 +82,29 @@
               item.kind = string.format("%s %s", icon, item.kind or "")
               return item
             end
-          '';*/
-        }; 
+          '';
+          */
+        };
 
         window = {
-                completion = {
-                  winhighlight =
-                    "FloatBorder:CmpBorder,Normal:CmpPmenu,Search:PmenuSel";
-                  scrollbar = false;
-                  sidePadding = 0;
-                  border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
-                };
+          completion = {
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,Search:PmenuSel";
+            scrollbar = false;
+            sidePadding = 0;
+            border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
+          };
 
-                settings.documentation = {
-                  border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
-                  winhighlight =
-                    "FloatBorder:CmpBorder,Normal:CmpPmenu,Search:PmenuSel";
-                };
-              };
-            };
+          settings.documentation = {
+            border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
+            winhighlight = "FloatBorder:CmpBorder,Normal:CmpPmenu,Search:PmenuSel";
+          };
+        };
       };
+    };
     cmp-nvim-lsp.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;
     cmp-treesitter.enable = true;
     dap.enable = true;
-
   };
 }
