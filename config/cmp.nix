@@ -13,6 +13,7 @@
           {name = "emoji";}
           {name = "luasnip";}
           {name = "supermaven";}
+          {name = "copilot";}
         ];
 
         mapping = {
