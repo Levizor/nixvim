@@ -5,16 +5,15 @@
     ./options.nix
     ./lsp.nix
     ./cmp.nix
-    ./mappings.nix
     ./utils
+    ./keys.nix
+    ./find.nix
   ];
 
   colorschemes.nord.enable = true;
 
   plugins = {
     lualine.enable = true;
-
-    telescope.enable = true;
 
     oil.enable = true;
 
