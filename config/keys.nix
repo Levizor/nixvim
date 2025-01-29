@@ -114,25 +114,23 @@
 
   keymaps = [
     {
-      action = "";
+      mode = "n";
+      key = "<leader>ff";
+      action = "<CMD>lua require('fzf-lua').files({ cwd = vim.loop.cwd() })<CR>";
+      options.desc = "Find Files";
     }
     {
-      action = "<cmd>Telescope live_grep<CR>";
-      key = "<leader>g";
-      options = {
-        desc = "Live Grep";
-      }; 
-    }
-    {
-      action = "<cmd>Telescope find_files<CR>";
-      key = "<leader>f";
-      options = {
-        desc = "Find files";
-      };
+      mode = "n";
+      key = "<leader>fr";
+      action = "<CMD>lua require('fzf-lua').oldfiles({ cwd = vim.loop.cwd() })<CR>";
+      options.desc = "Recent Files";
     }
     {
       action = "<cmd>Oil<CR>";
       key = "<leader>e";
+      options = {
+        desc = "Oil";
+      };
     }
     {
       action = "<cmd>BufferLineCycleNext<CR>";
@@ -184,11 +182,6 @@
       key = "gd";
       action = "<CMD>FzfLua lsp_definitions jump_to_single_result=true ignore_current_line=true<CR>";
       options.desc = "Goto Definition";
-    }
-    {
-      mode = "n";
-      key = "gD";
-      options.desc = "Goto Declaration";
     }
     {
       mode = "n";
