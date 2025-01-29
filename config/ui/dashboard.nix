@@ -1,5 +1,6 @@
 {
-  plugins.dashboard = {
+  plugins.alpha = {
     enable = true;
+    theme = "theta";
   };
 }
