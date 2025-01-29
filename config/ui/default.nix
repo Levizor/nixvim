@@ -1,7 +1,7 @@
 {
   imports = [
     ./gitsigns.nix
-    ./transparency.nix
+    ./transparent.nix
     ./bufferline.nix
     ./dashboard.nix
   ];
