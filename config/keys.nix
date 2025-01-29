@@ -68,6 +68,11 @@
           desc = "Goto Type defs";
         }
         {
+          __unkeyed-1 = "<leader>d";
+          group = "Debug";
+          icon = " ";
+        }
+        {
           __unkeyed-1 = "<leader>b";
           group = "Buffers";
           icon = "󰓩 ";

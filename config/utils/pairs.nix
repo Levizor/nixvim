@@ -6,4 +6,8 @@
       enable_abbr = true;
     };
   };
+
+  plugins.vim-surround = {
+    enable = true;
+  };
 }

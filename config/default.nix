@@ -15,16 +15,10 @@
   plugins = {
     lualine.enable = true;
 
-    oil.enable = true;
-
-    luasnip.enable = true;
-
     lazy.enable = true;
   };
-
 
   plugins.lsp-format = {
     enable = true;
   };
-
 }
