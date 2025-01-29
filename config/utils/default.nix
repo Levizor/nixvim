@@ -6,4 +6,10 @@
     ./undotree.nix
     ./copilot.nix
   ];
+
+  plugins = {
+    hop = {
+      enable = true;
+    };
+  };
 }

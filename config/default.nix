@@ -13,12 +13,6 @@
   colorschemes.nord.enable = true;
 
   plugins = {
-    lualine.enable = true;
-
     lazy.enable = true;
-  };
-
-  plugins.lsp-format = {
-    enable = true;
   };
 }

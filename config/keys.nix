@@ -103,6 +103,11 @@
           desc = "Previous Diagnostic";
         }
         {
+          __unkeyed-1 = "<leader>h";
+          icon = "󱡮 ";
+          desc = "Hop";
+        }
+        {
           __unkeyed-1 = "<leader>f";
           group = "File / Find";
           icon = " ";
@@ -233,6 +238,24 @@
       key = "<leader>cD";
       action = "<CMD>Trouble diagnostics toggle<CR>";
       options.desc = "List All Diagnostics";
+    }
+    {
+      mode = ["n" "v"];
+      key = "<leader>hw";
+      action = "<CMD>HopWord<CR>";
+      options.desc = "Hop Word";
+    }
+    {
+      mode = ["n" "v"];
+      key = "<leader>ha";
+      action = "<CMD>HopAnywhere<CR>";
+      options.desc = "Hop Anywhere";
+    }
+    {
+      mode = ["n" "v"];
+      key = "<leader>hl";
+      action = "<CMD>HopLine<CR>";
+      options.desc = "Hop Line";
     }
   ];
 }

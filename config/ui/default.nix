@@ -4,6 +4,7 @@
     ./transparent.nix
     ./bufferline.nix
     ./dashboard.nix
+    ./lualine.nix
   ];
   plugins = {
     noice.enable = true;
