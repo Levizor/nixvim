@@ -193,7 +193,7 @@
     }
     {
       action = "<cmd>UndotreeToggle<CR>";
-      key = "<leader>ut";
+      key = "<leader>u";
       options = {
         desc = "Toggle undotree";
       };
