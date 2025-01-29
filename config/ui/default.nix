@@ -1,4 +1,10 @@
 {
+  imports = [
+    ./gitsigns.nix
+    ./transparency.nix
+    ./bufferline.nix
+    ./dashboard.nix
+  ];
   plugins = {
     noice.enable = true;
     notify = {

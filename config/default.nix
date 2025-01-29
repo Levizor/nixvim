@@ -8,6 +8,7 @@
     ./utils
     ./keys.nix
     ./find.nix
+    ./ui
   ];
 
   colorschemes.nord.enable = true;
