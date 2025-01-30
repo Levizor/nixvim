@@ -169,7 +169,7 @@
     }
     {
       action = "<cmd>BufferLineMoveNext<CR>";
-      key = "<Ctrl-L>";
+      key = "<C-L>";
       options = {
         desc = "Move tab to right";
       };
@@ -177,7 +177,7 @@
     }
     {
       action = "<cmd>BufferLineMovePrev<CR>";
-      key = "<Ctrl-H>";
+      key = "<C-H>";
       options = {
         desc = "Move tab to left";
       };
@@ -241,19 +241,19 @@
     }
     {
       mode = ["n" "v"];
-      key = "<Ctrl-h>";
+      key = "<C-h>";
       action = "<CMD>HopWord<CR>";
       options.desc = "Hop Word";
     }
     {
       mode = ["n" "v"];
-      key = "<Ctrl-a>";
+      key = "<C-a>";
       action = "<CMD>HopAnywhere<CR>";
       options.desc = "Hop Anywhere";
     }
     {
       mode = ["n" "v"];
-      key = "<Ctrl-l>";
+      key = "<C-l>";
       action = "<CMD>HopLine<CR>";
       options.desc = "Hop Line";
     }
