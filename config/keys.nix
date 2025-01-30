@@ -241,19 +241,19 @@
     }
     {
       mode = ["n" "v"];
-      key = "<leader>hw";
+      key = "<Ctrl-h>";
       action = "<CMD>HopWord<CR>";
       options.desc = "Hop Word";
     }
     {
       mode = ["n" "v"];
-      key = "<leader>ha";
+      key = "<Ctrl-a>";
       action = "<CMD>HopAnywhere<CR>";
       options.desc = "Hop Anywhere";
     }
     {
       mode = ["n" "v"];
-      key = "<leader>hl";
+      key = "<Ctrl-l>";
       action = "<CMD>HopLine<CR>";
       options.desc = "Hop Line";
     }
