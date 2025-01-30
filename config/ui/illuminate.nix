@@ -1,0 +1,5 @@
+{
+  plugins.illuminate = {
+    enable = true;
+  };
+}
