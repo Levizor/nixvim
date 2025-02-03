@@ -40,7 +40,7 @@
     none-ls = {
       enable = true;
       sources.formatting = {
-        alejandra.enable = true;
+        nixfmt.enable = true;
         prettier.enable = true;
         sqlformat.enable = true;
         stylua.enable = true;
