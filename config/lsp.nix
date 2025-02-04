@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   plugins = {
     lsp-format.enable = true;
     lsp = {
@@ -40,7 +40,10 @@
     none-ls = {
       enable = true;
       sources.formatting = {
-        nixfmt.enable = true;
+        nixfmt = {
+          enable = true;
+          package = pkgs.nixfmt-rfc-style;
+        };
         prettier.enable = true;
         sqlformat.enable = true;
         stylua.enable = true;
@@ -56,9 +59,7 @@
         indent.enable = true;
       };
     };
-    treesitter-context = {
-      enable = true;
-    };
+    treesitter-context = { enable = true; };
 
     conform-nvim = {
       enable = true;
@@ -70,19 +71,17 @@
         notify_on_error = true;
 
         formatters_by_ft = {
-          css = ["prettier"];
-          html = ["prettier"];
-          json = ["prettier"];
-          lua = ["stylua"];
-          markdown = ["prettier"];
-          nix = ["alejandra"];
-          yaml = ["yamlfmt"];
+          css = [ "prettier" ];
+          html = [ "prettier" ];
+          json = [ "prettier" ];
+          lua = [ "stylua" ];
+          markdown = [ "prettier" ];
+          nix = [ "alejandra" ];
+          yaml = [ "yamlfmt" ];
         };
       };
     };
 
-    trouble = {
-      enable = true;
-    };
+    trouble = { enable = true; };
   };
 }
