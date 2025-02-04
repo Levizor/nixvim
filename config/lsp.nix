@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins = {
     lsp-format.enable = true;
     lsp = {
@@ -59,7 +60,9 @@
         indent.enable = true;
       };
     };
-    treesitter-context = { enable = true; };
+    treesitter-context = {
+      enable = true;
+    };
 
     conform-nvim = {
       enable = true;
@@ -82,6 +85,8 @@
       };
     };
 
-    trouble = { enable = true; };
+    trouble = {
+      enable = true;
+    };
   };
 }

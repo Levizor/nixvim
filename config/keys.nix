@@ -169,7 +169,7 @@
     }
     {
       action = "<cmd>BufferLineMoveNext<CR>";
-      key = "<C-L>";
+      key = "<C-S-l>";
       options = {
         desc = "Move tab to right";
       };
@@ -177,7 +177,7 @@
     }
     {
       action = "<cmd>BufferLineMovePrev<CR>";
-      key = "<C-H>";
+      key = "<C-S-h>";
       options = {
         desc = "Move tab to left";
       };
