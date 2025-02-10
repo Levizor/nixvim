@@ -10,8 +10,6 @@
     ./ui
   ];
 
-  colorschemes.nord.enable = true;
-
   plugins = {
     lazy.enable = true;
   };
