@@ -5,6 +5,7 @@
     ./dap.nix
     ./undotree.nix
     ./copilot.nix
+    ./persisted.nix
   ];
 
   plugins = {
