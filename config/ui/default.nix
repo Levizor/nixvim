@@ -7,6 +7,9 @@
     ./lualine.nix
     ./illuminate.nix
   ];
+
+  colorschemes.cyberdream.enable = true;
+
   plugins = {
     noice.enable = true;
     notify = {
