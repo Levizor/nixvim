@@ -133,6 +133,28 @@
 
   keymaps = [
     {
+      mode = "v";
+      key = ">";
+      action = ">gv";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Indent right and keep selection";
+      };
+    }
+
+    {
+      mode = "v";
+      key = "<";
+      action = "<gv";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Indent left and keep selection";
+      };
+    }
+
+    {
       mode = "n";
       key = "<leader>ff";
       action = "<CMD>lua require('fzf-lua').files({ cwd = vim.loop.cwd() })<CR>";
@@ -157,7 +179,10 @@
       options = {
         desc = "Next Tab";
       };
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
     }
     {
       action = "<cmd>BufferLineCyclePrev<CR>";
@@ -165,7 +190,10 @@
       options = {
         desc = "Previous tab";
       };
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
     }
     {
       action = "<cmd>BufferLineMoveNext<CR>";
@@ -173,7 +201,10 @@
       options = {
         desc = "Move tab to right";
       };
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
     }
     {
       action = "<cmd>BufferLineMovePrev<CR>";
@@ -181,13 +212,19 @@
       options = {
         desc = "Move tab to left";
       };
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
     }
     {
       action = "<cmd>bd<CR>";
       key = "<leader>x";
       options.desc = "Delete buffer";
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
     }
     {
       action = "<cmd>TransparentToggle<CR>";
@@ -240,19 +277,28 @@
       options.desc = "List All Diagnostics";
     }
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<C-h>";
       action = "<CMD>HopWord<CR>";
       options.desc = "Hop Word";
     }
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<C-a>";
       action = "<CMD>HopAnywhere<CR>";
       options.desc = "Hop Anywhere";
     }
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<C-l>";
       action = "<CMD>HopLine<CR>";
       options.desc = "Hop Line";
