@@ -155,9 +155,27 @@
     }
     {
       mode = "n";
+      key = "<C-i>";
+      action = "<C-a>";
+      options = {
+        noremap = true;
+        desc = "";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>ca";
-      action = "<CMD>lua require('fzf-lua').lsp_code_actions({ previewer = 'builtin' })<CR>";
+      action = "<cmd>lua require('fzf-lua').lsp_code_actions({ previewer = 'builtin' })<cr>";
       options.desc = "LSP Code Actions with Preview";
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      key = "<leader>d";
+      action = "\"_d";
+      options.desc = "Delete to the void";
     }
     {
       mode = "n";
