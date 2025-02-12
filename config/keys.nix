@@ -153,7 +153,12 @@
         desc = "Indent left and keep selection";
       };
     }
-
+    {
+      mode = "n";
+      key = "<leader>ca";
+      action = "<CMD>lua require('fzf-lua').lsp_code_actions({ previewer = 'builtin' })<CR>";
+      options.desc = "LSP Code Actions with Preview";
+    }
     {
       mode = "n";
       key = "<leader>ff";
