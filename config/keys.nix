@@ -147,7 +147,7 @@
         "v"
       ];
       key = "J";
-      action = ":<C-u>execute \"'<,'>move '>+\" . v:count1<CR>gv=gv";
+      action = ":execute \"'<,'>move '>+\" . v:count1<CR>gv=gv";
       options.desc = "Move selected text down";
     }
 
@@ -156,7 +156,7 @@
         "v"
       ];
       key = "K";
-      action = ":<C-u>execute \"'<,'>move '<-\" . v:count1<CR>gv=gv";
+      action = ":execute \"'<,'>move '<-\" . v:count1<CR>gv=gv";
       options.desc = "Move selected text up";
     }
     {
