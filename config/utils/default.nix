@@ -4,7 +4,7 @@
     ./oil.nix
     ./dap.nix
     ./undotree.nix
-    ./copilot.nix
+    # ./copilot.nix
     ./persisted.nix
   ];
 
