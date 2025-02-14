@@ -146,20 +146,18 @@
       mode = [
         "v"
       ];
-      key = "J";
-      action = ":execute \"'<,'>move '>+\" . v:count1<CR>gv=gv";
-      options.desc = "Move selected text down";
-      options.silent = true;
+      key = "K";
+      action = ":move '<-2<CR>gv=gv";
+      options.desc = "Move selected text up";
     }
 
     {
       mode = [
         "v"
       ];
-      key = "K";
-      action = ":execute \"'<,'>move '<-\" . v:count1<CR>gv=gv";
-      options.desc = "Move selected text up";
-      options.silent = true;
+      key = "J";
+      action = ":move '>+1<CR>gv=gv";
+      options.desc = "Move selected text down";
     }
     {
       mode = "v";
