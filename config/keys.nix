@@ -149,6 +149,7 @@
       key = "J";
       action = ":execute \"'<,'>move '>+\" . v:count1<CR>gv=gv";
       options.desc = "Move selected text down";
+      options.silent = true;
     }
 
     {
@@ -158,6 +159,7 @@
       key = "K";
       action = ":execute \"'<,'>move '<-\" . v:count1<CR>gv=gv";
       options.desc = "Move selected text up";
+      options.silent = true;
     }
     {
       mode = "v";
