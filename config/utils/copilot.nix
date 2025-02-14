@@ -1,10 +1,10 @@
 {
   plugins.copilot-lua = {
-    enable = true;
+    enable = false;
   };
 
   plugins.copilot-cmp = {
-    enable = true;
-    autoLoad = true;
+    enable = false;
+    autoLoad = false;
   };
 }

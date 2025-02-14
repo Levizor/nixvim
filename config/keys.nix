@@ -142,7 +142,23 @@
         desc = "Indent right and keep selection";
       };
     }
+    {
+      mode = [
+        "v"
+      ];
+      key = "J";
+      action = ":<C-u>execute \"'<,'>move '>+\" . v:count1<CR>gv=gv";
+      options.desc = "Move selected text down";
+    }
 
+    {
+      mode = [
+        "v"
+      ];
+      key = "K";
+      action = ":<C-u>execute \"'<,'>move '<-\" . v:count1<CR>gv=gv";
+      options.desc = "Move selected text up";
+    }
     {
       mode = "v";
       key = "<";
