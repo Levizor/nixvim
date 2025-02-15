@@ -149,7 +149,7 @@
       key = "K";
       action = ":move '<-2<CR>gv=gv";
       options.desc = {
-        description = "Move selected text up";
+        desc = "Move selected text up";
         silent = true;
       };
     }
@@ -161,7 +161,7 @@
       key = "J";
       action = ":move '>+1<CR>gv=gv";
       options.desc = {
-        description = "Move selected text down";
+        desc = "Move selected text down";
         silent = true;
       };
     }
