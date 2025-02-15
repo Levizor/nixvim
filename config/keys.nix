@@ -217,7 +217,7 @@
     {
       mode = "n";
       key = "<leader>pr";
-      action = "<cmd>!tmux display-popup -E -T \"TMS\" \"tms\"";
+      action = "<cmd>!tmux display-popup -E -T \"TMS\" \"tms\"<CR>";
     }
     {
       mode = "n";
