@@ -147,7 +147,7 @@
         "v"
       ];
       key = "K";
-      action = ":move '<-2<CR>gv=gv";
+      action = "<cmd>move '<-2<CR>gv=gv";
       options = {
         desc = "Move selected text up";
         silent = true;
@@ -159,7 +159,7 @@
         "v"
       ];
       key = "J";
-      action = ":move '>+1<CR>gv=gv";
+      action = "<cmd>move '>+1<CR>gv=gv";
       options = {
         desc = "Move selected text down";
         silent = true;
@@ -242,7 +242,7 @@
     }
     {
       action = "<cmd>BufferLineMoveNext<CR>";
-      key = "<C-.>";
+      key = "<leader><";
       options = {
         desc = "Move tab to right";
       };
@@ -253,7 +253,7 @@
     }
     {
       action = "<cmd>BufferLineMovePrev<CR>";
-      key = "<C-,>";
+      key = "<leader>>";
       options = {
         desc = "Move tab to left";
       };
