@@ -147,8 +147,9 @@
         "v"
       ];
       key = "K";
-      action = "<cmd>move '<-2<CR>gv=gv";
+      action = "<cmd>m '<-2<CR>gv=gv";
       options = {
+        noremap = true;
         desc = "Move selected text up";
         silent = true;
       };
@@ -159,10 +160,11 @@
         "v"
       ];
       key = "J";
-      action = "<cmd>move '>+1<CR>gv=gv";
+      action = "<cmd>m '>+1<CR>gv=gv";
       options = {
         desc = "Move selected text down";
         silent = true;
+        noremap = true;
       };
     }
     {
@@ -181,8 +183,41 @@
       action = "<C-a>";
       options = {
         noremap = true;
-        desc = "";
+        desc = "Increment a number";
       };
+    }
+    {
+      mode = "n";
+      key = "<C-d>";
+      action = "<C-d>zz";
+      options = {
+        noremap = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<C-u>";
+      action = "<C-u>zz";
+      options = {
+        noremap = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "N";
+      action = "Nzzzv";
+      options.noremap = true;
+    }
+    {
+      mode = "n";
+      key = "n";
+      action = "nzzzv";
+      options.noremap = true;
+    }
+    {
+      mode = "n";
+      key = "<leader>pr";
+      action = "<cmd>!tmux display-popup -E -T \"TMS\" \"tms\"";
     }
     {
       mode = "n";
