@@ -66,10 +66,11 @@
 
     treesitter-textobjects = {
       enable = true;
-      lspInterop.enable = true;
+      lspinterop.enable = true;
       select = {
         enable = true;
         lookahead = true;
+        includeSurroundingWhitespace = true;
         keymaps = {
           "af" = "@function.outer";
           "if" = "@function.inner";
