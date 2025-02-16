@@ -66,7 +66,7 @@
 
     treesitter-textobjects = {
       enable = true;
-      lspinterop.enable = true;
+      lspInterop.enable = true;
       select = {
         enable = true;
         lookahead = true;
