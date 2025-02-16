@@ -64,6 +64,14 @@
       enable = true;
     };
 
+    treesitter-textobjects = {
+      enable = true;
+      lspInterop.enable = true;
+      select = {
+        enable = true;
+      };
+    };
+
     conform-nvim = {
       enable = true;
       settings = {
