@@ -179,7 +179,7 @@
     }
     {
       mode = "n";
-      key = "<C-i>";
+      key = "<leader>i";
       action = "<C-a>";
       options = {
         noremap = true;
