@@ -114,11 +114,11 @@
 
       };
     };
-    config.settings = {
-      foldenable = true;
-      foldlevel = 99;
-      foldcolumn = "1";
-      foldlevelstart = 99;
-    };
+  };
+  config.settings = {
+    foldenable = true;
+    foldlevel = 99;
+    foldcolumn = "1";
+    foldlevelstart = 99;
   };
 }
