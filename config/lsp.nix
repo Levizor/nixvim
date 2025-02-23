@@ -53,6 +53,7 @@
     };
 
     treesitter = {
+      folding = true;
       enable = true;
       nixGrammars = true;
       settings = {
@@ -67,7 +68,6 @@
     treesitter-textobjects = {
       enable = true;
       lspInterop.enable = true;
-      folding = true;
       select = {
         enable = true;
         lookahead = true;
