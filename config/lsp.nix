@@ -67,6 +67,7 @@
     treesitter-textobjects = {
       enable = true;
       lspInterop.enable = true;
+      folding = true;
       select = {
         enable = true;
         lookahead = true;
