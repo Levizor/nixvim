@@ -14,7 +14,7 @@
       smartindent = true;
       shiftwidth = 2;
       tabstop = 2;
-      foldmethod = "syntax";
+      foldmethod = "indent";
       foldenable = true;
       foldlevel = 1;
 
