@@ -15,7 +15,8 @@
       shiftwidth = 2;
       tabstop = 2;
       foldenable = true;
-      foldlevel = 1;
+      foldlevel = 2;
+      foldexpr = "nvim_treesitter#foldexpr()";
 
       ignorecase = true;
       incsearch = true;
