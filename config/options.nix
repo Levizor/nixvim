@@ -12,8 +12,11 @@
       clipboard = "unnamedplus";
       expandtab = true;
       smartindent = true;
-      shiftwidth=2;
-      tabstop=2;
+      shiftwidth = 2;
+      tabstop = 2;
+      foldmethod = "syntax";
+      foldenable = true;
+      foldlevel = 1;
 
       ignorecase = true;
       incsearch = true;
