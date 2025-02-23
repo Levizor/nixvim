@@ -15,6 +15,11 @@
       shiftwidth = 2;
       tabstop = 2;
 
+      foldenable = true;
+      foldlevel = 99;
+      foldcolumn = "1";
+      foldlevelstart = 99;
+
       ignorecase = true;
       incsearch = true;
       smartcase = true;
