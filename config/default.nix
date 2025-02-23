@@ -8,6 +8,7 @@
     ./keys.nix
     ./find.nix
     ./ui
+    ./fold.nix
   ];
 
   plugins = {
