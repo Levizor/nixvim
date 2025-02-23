@@ -14,8 +14,8 @@
       smartindent = true;
       shiftwidth = 2;
       tabstop = 2;
-      foldenable = true;
-      foldlevel = 2;
+      foldlevel = 4;
+      foldmethod = "expr";
       foldexpr = "nvim_treesitter#foldexpr()";
 
       ignorecase = true;
