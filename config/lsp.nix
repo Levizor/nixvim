@@ -108,7 +108,6 @@
     };
     nvim-ufo = {
       enable = true;
-      setupLspCapabilities = true;
 
       settings = {
 
