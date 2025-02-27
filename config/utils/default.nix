@@ -12,5 +12,8 @@
     hop = {
       enable = true;
     };
+    markdown-preview = {
+      enable = true;
+    };
   };
 }
