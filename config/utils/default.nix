@@ -15,5 +15,6 @@
     markdown-preview = {
       enable = true;
     };
+    mkdnflow.enable = true;
   };
 }
