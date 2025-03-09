@@ -5,6 +5,7 @@
     lsp = {
       enable = true;
       servers = {
+        pyright.enable = true;
         markdown_oxide.enable = true;
         lua_ls.enable = true;
         rust_analyzer = {
