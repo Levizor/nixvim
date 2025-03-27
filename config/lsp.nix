@@ -60,6 +60,7 @@
         sqlformat.enable = true;
         stylua.enable = true;
         yamlfmt.enable = true;
+        djhtml.enable = true;
       };
     };
 
