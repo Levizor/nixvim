@@ -5,7 +5,15 @@
     lsp = {
       enable = true;
       servers = {
-        html.enable = true;
+        html = {
+          enable = true;
+          filetypes = [
+            "htmldjango"
+            "html"
+          ];
+          autostart = true;
+        };
+
         pyright.enable = true;
         markdown_oxide.enable = true;
         lua_ls.enable = true;
