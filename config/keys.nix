@@ -370,15 +370,6 @@
         "n"
         "v"
       ];
-      key = "<C-a>";
-      action = "<CMD>HopAnywhere<CR>";
-      options.desc = "Hop Anywhere";
-    }
-    {
-      mode = [
-        "n"
-        "v"
-      ];
       key = "<C-l>";
       action = "<CMD>HopLine<CR>";
       options.desc = "Hop Line";
