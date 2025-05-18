@@ -7,6 +7,7 @@
     # ./copilot.nix
     ./persisted.nix
     ./lazygit.nix
+    ./codesnap.nix
   ];
 
   plugins = {
