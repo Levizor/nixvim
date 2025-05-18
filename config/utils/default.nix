@@ -6,7 +6,7 @@
     ./undotree.nix
     # ./copilot.nix
     ./persisted.nix
-    # ./xkbswitch.nix
+    ./lazygit.nix
   ];
 
   plugins = {

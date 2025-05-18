@@ -374,5 +374,11 @@
       action = "<CMD>HopLine<CR>";
       options.desc = "Hop Line";
     }
+    {
+      mode = [ "n" ];
+      key = "<leader>lg";
+      action = "<CMD>LazyGit<CR>";
+      options.desc = "LazyGit";
+    }
   ];
 }
