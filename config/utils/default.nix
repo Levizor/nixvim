@@ -6,6 +6,7 @@
     ./undotree.nix
     # ./copilot.nix
     ./persisted.nix
+    # ./xkbswitch.nix
   ];
 
   plugins = {
