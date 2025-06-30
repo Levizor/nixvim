@@ -75,6 +75,10 @@
     };
     treesitter-context = {
       enable = true;
+      settings = {
+        max_lines = 4;
+        mode = "cursor";
+      };
     };
 
     treesitter-textobjects = {
