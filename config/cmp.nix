@@ -17,9 +17,9 @@
 
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
-          "<C-n>" = "cmp.mapping.scroll_docs(-4)";
           "<C-c>" = "cmp.mapping.close()";
-          "<C-t>" = "cmp.mapping.scroll_docs(4)";
+          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+          "<C-f>" = "cmp.mapping.scroll_docs(4)";
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";

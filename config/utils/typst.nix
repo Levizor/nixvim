@@ -6,6 +6,7 @@
     lsp.servers.tinymist = {
       enable = true;
     };
+    none-ls.sources.formatting.typstfmt.enable = true;
 
   };
 
