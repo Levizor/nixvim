@@ -8,6 +8,7 @@
     ./persisted.nix
     ./lazygit.nix
     ./codesnap.nix
+    ./typst.nix
   ];
 
   plugins = {
