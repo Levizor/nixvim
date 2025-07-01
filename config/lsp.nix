@@ -27,7 +27,6 @@
         cmake.enable = true;
         nixd.enable = true;
         bashls.enable = true;
-        typst.enable = true;
       };
 
       keymaps = {
