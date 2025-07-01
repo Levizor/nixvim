@@ -1,11 +1,7 @@
 {
   plugins = {
-    lsp.servers.typst.enable = true;
-
     typst-preview = {
       enable = true;
-      settings = {
-      };
     };
 
   };
