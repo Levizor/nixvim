@@ -18,5 +18,11 @@
         desc = "Typst Preview";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>tc";
+      action = "<cmd>TypstPreviewSyncCursor<cr>";
+      options.desc = "Typst Preview Sync Cursor";
+    }
   ];
 }
