@@ -13,6 +13,7 @@
           ];
           autostart = true;
         };
+        djlsp.enable = true;
 
         pyright.enable = true;
         markdown_oxide.enable = true;
