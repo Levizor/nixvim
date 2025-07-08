@@ -14,7 +14,7 @@
           autostart = true;
         };
         djlsp.enable = true;
-
+        djlsp.package = pkgs.callPackage ./python-packages.nix { };
         pyright.enable = true;
         markdown_oxide.enable = true;
         lua_ls.enable = true;
