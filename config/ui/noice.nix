@@ -18,17 +18,17 @@
               {
                 require("noice").api.status.command.get,
                 cond = require("noice").api.status.command.has,
-                color = { fg = "yellow" },
+                color = { fg = "#ff9e64" },
               },
               {
                 require("noice").api.status.mode.get,
                 cond = require("noice").api.status.mode.has,
-                color = { fg = "yellow" },
+                color = { fg = "#ff9e64" },
               },
               {
                 require("noice").api.status.search.get,
                 cond = require("noice").api.status.search.has,
-                color = { fg = "yellow" },
+                color = { fg = "#ff9e64" },
               },
             },
           },
