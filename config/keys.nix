@@ -214,6 +214,50 @@
       action = "nzzzv";
       options.noremap = true;
     }
+
+    # fix pasting and deleting with selected text
+    {
+      mode = "v";
+      key = "p";
+      options = {
+        noremap = true;
+      };
+      action = "\"_dp";
+    }
+    {
+      mode = "v";
+      key = "P";
+      options = {
+        noremap = true;
+      };
+      action = "\"_dP";
+    }
+    {
+      mode = "v";
+      key = "<leader>p";
+      options = {
+        noremap = true;
+      };
+      action = "p";
+    }
+    {
+      mode = "v";
+      key = "<leader>P";
+      options = {
+        noremap = true;
+      };
+      action = "P";
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      key = "<leader>d";
+      action = "\"_d";
+      options.desc = "Delete to the void";
+    }
+
     {
       mode = "n";
       key = "<leader>pr";
@@ -224,15 +268,6 @@
       key = "<leader>ca";
       action = "<cmd>lua require('fzf-lua').lsp_code_actions({ previewer = 'builtin' })<cr>";
       options.desc = "LSP Code Actions with Preview";
-    }
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>d";
-      action = "\"_d";
-      options.desc = "Delete to the void";
     }
     {
       mode = "n";
