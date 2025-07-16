@@ -6,12 +6,12 @@
     ./dashboard.nix
     ./lualine.nix
     ./illuminate.nix
+    ./noice.nix
   ];
 
   colorschemes.cyberdream.enable = true;
 
   plugins = {
-    noice.enable = true;
     notify = {
       enable = true;
       settings = {
