@@ -3,7 +3,7 @@
     enable = true;
     enableTelescope = true;
     settings = {
-      autoload = true;
+      autoload = false;
       use_git_branch = true;
     };
 
