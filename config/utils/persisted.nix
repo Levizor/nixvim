@@ -1,8 +1,7 @@
 {
   plugins.persisted = {
-    enable = true;
+    enable = false;
     enableTelescope = true;
-    autoLoad = true;
     settings = {
       autostart = true;
       autoload = true;
