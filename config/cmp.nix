@@ -22,8 +22,8 @@
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          "<Tab>" = "luasnip.expand_or_jump()";
-          "<S-Tab>" = "luasnip.jump(-1)";
+          "<Tab>" = "require(\"luasnip\").expand_or_jump()";
+          "<S-Tab>" = "require(\"luasnip\").jump(-1)";
         };
 
         formatting = {
