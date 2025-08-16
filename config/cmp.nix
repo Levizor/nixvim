@@ -129,7 +129,7 @@
         "s"
       ];
       key = "<Tab>";
-      action = ''
+      action.__raw = ''
         function()
           local ls = require("luasnip")
           if ls.jumpable(1) then
@@ -151,7 +151,7 @@
         "s"
       ];
       key = "<S-Tab>";
-      action = ''
+      action.__raw = ''
         function()
           local ls = require("luasnip")
           if ls.jumpable(-1) then
