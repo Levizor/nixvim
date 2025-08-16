@@ -7,9 +7,7 @@
       use_git_branch = true;
       # autoload = false;
       autoload.__raw = ''
-        function()
-          return false
-        end
+        return false
       '';
     };
   };
