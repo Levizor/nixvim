@@ -1,6 +1,6 @@
 {
   plugins.noice = {
-    enable = true;
+    enable = false;
     settings = {
       bottom_search = true;
       command_pallete = true;

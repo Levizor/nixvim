@@ -1,7 +1,7 @@
 {
   plugins = {
     bufferline = {
-      enable = false;
+      enable = true;
       settings = {
         fill.bg = "#2E3440";
       };
