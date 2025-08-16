@@ -4,14 +4,13 @@
     enable = true;
     enableTelescope = true;
     settings = {
-      autoload.__raw = ''
+      autoload = ''
         function()
           if vim.fn.argc() > 0 and vim.fn.argv(0) == "-" then
             return false
           end
           return true
-        end,
-      '';
+        end'';
       use_git_branch = true;
     };
   };
