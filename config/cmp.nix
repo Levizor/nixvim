@@ -131,8 +131,9 @@
       key = "<Tab>";
       action.__raw = ''
         function()
+          print("TAB")
           local ls = require("luasnip")
-          if ls.jumpable(1) then
+          if ls.expand_or_jumpable() then
             ls.jump_or_expand();
           else
             return "<Tab>"
@@ -154,7 +155,7 @@
       action.__raw = ''
         function()
           local ls = require("luasnip")
-          if ls.jumpable(-1) then
+          if  ls.jumpable(-1) then
             ls.jump(-1);
           else
             return "<S-Tab>"
