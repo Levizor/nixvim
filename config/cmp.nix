@@ -1,29 +1,6 @@
 {
   plugins = {
     luasnip.enable = true;
-    luasnip.luaConfig.post = ''
-      local ls = require("luasnip")
-
-      -- Jump forward with <Tab>
-      vim.keymap.set({ "i", "s" }, "<Tab>", function()
-        if ls.jumpable(1) then
-          return "<Plug>luasnip-jump-next"
-        else
-          return "<Tab>"
-        end
-      end, { expr = true, silent = true })
-
-      -- Jump backward with <S-Tab>
-      vim.keymap.set({ "i", "s" }, "<S-Tab>", function()
-        if ls.jumpable(-1) then
-          return "<Plug>luasnip-jump-prev"
-        else
-          return "<S-Tab>"
-        end
-      end, { expr = true, silent = true })
-
-    '';
-
     cmp = {
       enable = true;
       autoEnableSources = true;
@@ -144,4 +121,51 @@
     cmp-treesitter.enable = true;
     dap.enable = true;
   };
+
+  keymaps = [
+    {
+      mode = [
+        "i"
+        "s"
+      ];
+      key = "<Tab>";
+      action = ''
+        function()
+          local ls = require("luasnip")
+          if ls.jumpable(1) then
+            return "<Plug>luasnip-jump-next"
+          else
+            return "<Tab>"
+          end
+        end
+      '';
+      options = {
+        expr = true;
+        silent = true;
+        desc = "LuaSnip jump forward";
+      };
+    }
+    {
+      mode = [
+        "i"
+        "s"
+      ];
+      key = "<S-Tab>";
+      action = ''
+        function()
+          local ls = require("luasnip")
+          if ls.jumpable(-1) then
+            return "<Plug>luasnip-jump-prev"
+          else
+            return "<S-Tab>"
+          end
+        end
+      '';
+      options = {
+        expr = true;
+        silent = true;
+        desc = "LuaSnip jump backward";
+      };
+    }
+  ];
 }
