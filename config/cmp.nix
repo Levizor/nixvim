@@ -22,6 +22,8 @@
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+          "<Tab>" = "luasnip.expand_or_jump()";
+          "<S-Tab>" = "luasnip.jump(-1)";
         };
 
         formatting = {
@@ -121,51 +123,4 @@
     cmp-treesitter.enable = true;
     dap.enable = true;
   };
-
-  keymaps = [
-    {
-      mode = [
-        "i"
-        "s"
-      ];
-      key = "<Tab>";
-      action.__raw = ''
-        function()
-          local ls = require("luasnip")
-          if ls.jumpable(1) then
-            return "<Plug>luasnip-jump-next"
-          else
-            return "<Tab>"
-          end
-        end
-      '';
-      options = {
-        expr = true;
-        silent = true;
-        desc = "LuaSnip jump forward";
-      };
-    }
-    {
-      mode = [
-        "i"
-        "s"
-      ];
-      key = "<S-Tab>";
-      action.__raw = ''
-        function()
-          local ls = require("luasnip")
-          if ls.jumpable(-1) then
-            return "<Plug>luasnip-jump-prev"
-          else
-            return "<S-Tab>"
-          end
-        end
-      '';
-      options = {
-        expr = true;
-        silent = true;
-        desc = "LuaSnip jump backward";
-      };
-    }
-  ];
 }
