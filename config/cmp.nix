@@ -1,6 +1,28 @@
 {
   plugins = {
     luasnip.enable = true;
+    luasnip.luaConfig.post = ''
+      local ls = require("luasnip")
+
+      -- Jump forward with <Tab>
+      vim.keymap.set({ "i", "s" }, "<Tab>", function()
+        if ls.jumpable(1) then
+          return "<Plug>luasnip-jump-next"
+        else
+          return "<Tab>"
+        end
+      end, { expr = true, silent = true })
+
+      -- Jump backward with <S-Tab>
+      vim.keymap.set({ "i", "s" }, "<S-Tab>", function()
+        if ls.jumpable(-1) then
+          return "<Plug>luasnip-jump-prev"
+        else
+          return "<S-Tab>"
+        end
+      end, { expr = true, silent = true })
+
+    '';
 
     cmp = {
       enable = true;
