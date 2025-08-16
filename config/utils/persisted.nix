@@ -5,10 +5,7 @@
     enableTelescope = true;
     settings = {
       autoload = lib.nixvim.mkRaw ''
-        if vim.fn.argc() > 0 and vim.fn.argv(0) == "-" then
-          return false
-        end
-        return true
+        return false
       '';
       use_git_branch = true;
     };
