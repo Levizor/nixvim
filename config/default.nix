@@ -9,6 +9,7 @@
     ./keys.nix
     ./find.nix
     ./ui
+    ./extraPlugins.nix
   ];
 
   plugins = {
