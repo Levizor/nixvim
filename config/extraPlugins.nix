@@ -4,7 +4,7 @@
     vimPlugins.vim-xkbswitch
   ];
 
-  extraConfigLua.__raw = ''
+  extraConfigLua = ''
     vim.g.XkbSwitchEnabled = 1;
   '';
 }
