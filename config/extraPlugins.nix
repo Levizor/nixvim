@@ -2,7 +2,7 @@
 {
   extraPackages = with pkgs; [ jq ];
 
-  extraConfigLua = ''
+  extraConfigLua.__raw = ''
     local M = {}
 
     -- store the last insert mode layout
