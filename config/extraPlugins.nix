@@ -16,6 +16,6 @@
   ];
 
   extraConfigLuaPost = ''
-    require("langswitch").setup()
+    require("hyprxkbswitch").setup()
   '';
 }
