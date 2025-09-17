@@ -5,6 +5,7 @@
     lsp = {
       enable = true;
       servers = {
+        yamlls.enable = true;
         html = {
           enable = true;
           filetypes = [
