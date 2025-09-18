@@ -22,5 +22,13 @@
     };
     render-markdown.enable = true;
     todo-comments.enable = true;
+
+    snacks = {
+      enable = true;
+    };
+
+    image = {
+      enable = true;
+    };
   };
 }
