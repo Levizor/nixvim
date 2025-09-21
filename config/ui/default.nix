@@ -28,7 +28,7 @@
     };
 
     image = {
-      enable = true;
+      enable = false;
     };
   };
 }
