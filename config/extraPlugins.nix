@@ -16,6 +16,6 @@
   ];
 
   extraConfigLuaPost = ''
-    require("hyprxkbswitch").setup()
+    -- require("hyprxkbswitch").setup()
   '';
 }
